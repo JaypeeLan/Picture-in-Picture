@@ -1,5 +1,5 @@
-const videoElement = document.getElementById("video");
-const button = document.getElementById("button");
+const videoElement = document.getElementById("video")! as HTMLVideoElement;
+const button = document.getElementById("button")! as HTMLButtonElement;
 
 // prompt user to select media stream, pass to video elem and play
 const selectMediaStream = async () => {
@@ -15,7 +15,7 @@ const selectMediaStream = async () => {
       videoElement.play();
     };
   } catch (error) {
-    alert("Error: ", error);
+    alert("Error: " + error);
   }
 };
 

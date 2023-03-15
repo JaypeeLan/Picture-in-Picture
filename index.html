@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Picture in Picture</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,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"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
@@ -19,6 +23,6 @@
       <button id="button">START</button>
     </div>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
